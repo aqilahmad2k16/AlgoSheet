@@ -1,4 +1,5 @@
 import java.nio.channels.ClosedSelectorException;
+import java.util.ArrayList;
 import java.util.Scanner;
 
 public class List4 {
@@ -41,8 +42,22 @@ public class List4 {
         // findUpperAndLowerCase(str);
 
         //Question 8
+        System.out.println("Enter the size of first arrays");
+        int n1 = scan.nextInt();
+        int[] arr1 = new int[n1];
+
+        for(int i=0; i<n1; i++){
+            arr1[i] = scan.nextInt();
+        }
+
+        System.out.println("Enter the size of second arrays");
+        int n2 = scan.nextInt();
+        int[] arr2 = new int[n2];
         
-        findTheUnionOfTwoArrays()
+        for(int i=0; i<n2; i++){
+            arr2[i] = scan.nextInt();
+        }
+        findTheUnionOfTwoArrays(arr1, arr2);
 
 
 
@@ -225,6 +240,31 @@ public class List4 {
             }
         }
         System.out.print(str1);
+    }
+
+
+    public static void findTheUnionOfTwoArrays(int[] arr1, int[] arr2){
+        ArrayList<Integer> lst = new ArrayList<>();
+        int i=0;
+        lst.add(arr1[0]);
+        while(i<arr1.length){  
+            ++i; 
+            if (isArraysContain(lst, i, arr1) == false){
+
+                lst.add(arr1[i]);
+            }
+        
+        }
+        System.out.println(lst);    
+    }
+
+    public static boolean isArraysContain( ArrayList<Integer> arr, int i , int[] arr1){
+        for(int j=0; j<arr.size(); j++){
+            if(arr.get(j) == arr1[i]){
+                return true;
+            }
+        }
+        return false;
     }
 
 }

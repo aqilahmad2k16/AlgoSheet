@@ -1,4 +1,5 @@
 import java.util.ArrayList;
+import java.util.Arrays;
 import java.util.Scanner;
 
 public class List3 {
@@ -46,6 +47,9 @@ public class List3 {
             arr[i] = scan.nextInt();
         }
 
+
+
+
         // System.out.println("Enter element that's you want to remove from the array");
         // int k = scan.nextInt();
 
@@ -56,7 +60,13 @@ public class List3 {
 
         // Question 10 (descending order)
 
-        // sortDescendingOrder(arr); // Doubt
+        // sortDescendingOrder(arr); 
+
+        // Question 1
+        // findTheSecondLargest(arr);
+
+        // Question 2
+        // findTheSecondSmallest(arr);
 
 
 
@@ -204,10 +214,10 @@ public class List3 {
     }
 
     public static void sortDescendingOrder(int[] arr){
-        for(int i=0; i<arr.length-1; i++){
-            for(int j=i+1; j<arr.length; j++){
-                if(isGreater(arr,j-1, j)){
-                    swap(arr, j-1, j);
+        for(int i=1; i<arr.length-1; i++){
+            for(int j=0; j<arr.length-1; j++){
+                if(isGreater(arr,j+1, j)){
+                    swap(arr, j+1, j);
                 }
             }
         }
@@ -217,11 +227,24 @@ public class List3 {
     }
 
     public static boolean isGreater(int[] arr, int i, int j){
-        if(arr[i] < arr[j]){
+        if(arr[i] > arr[j]){
             return true;
         }else{
             return false;
         }
+    }
+
+    public static void findTheSecondLargest(int[] arr){
+        //use two variable concept
+        Arrays.sort(arr);
+        System.out.println(arr[arr.length-2]);
+        
+    }
+
+    public static void findTheSecondSmallest(int[] arr){
+        Arrays.sort(arr);
+        System.out.println(arr[1]);
+
     }
 
 

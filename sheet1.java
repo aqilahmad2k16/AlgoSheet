@@ -1,6 +1,6 @@
 import java.util.Scanner;
 
-public class List1 {
+public class sheet1 {
     // Question 2
     // public static void swap(int p, int q){
     // int temp = p;

@@ -1,7 +1,7 @@
 import java.util.ArrayList;
 import java.util.Scanner;
 
-public class List6 {
+public class sheet6 {
     public static void main(String[] args) {
         Scanner scan = new Scanner(System.in);
         // System.out.println("Enter the size of the array");
@@ -106,12 +106,25 @@ public class List6 {
     public static void checkIsogram(String str){
         for(int i=0; i<str.length(); i++){
             char ch = str.charAt(i);
-            if(isContain(str, ch) == false){
-                System.out.println("String is not Isogram");
-            }
-
+            isContain(str, ch);
         }
 
-        System.out.println("String is Isogram");
+       
+    }
+
+    public static void isContain(String str, char ch){
+        int count = 0;
+        for(int i=0; i<str.length(); i++){
+            char ch1 = str.charAt(i);
+            if(ch1 == ch){
+                count++;
+            }
+            if(count>1){
+                return false;
+            }
+            count = 0;
+        }
+
+        return true;
     }
 }

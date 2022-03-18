@@ -2,7 +2,7 @@ import java.nio.channels.ClosedSelectorException;
 import java.util.ArrayList;
 import java.util.Scanner;
 
-public class List4 {
+public class sheet4 {
     public static void main(String[] args) {
         Scanner scan = new Scanner(System.in);
         // System.out.println("Enter the number");

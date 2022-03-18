@@ -1,7 +1,7 @@
 import java.util.ArrayList;
 import java.util.Scanner;
 
-public class List2 {
+public class sheet2 {
     public static void main(String[] args){
         Scanner scan  = new Scanner(System.in);
         // question 1

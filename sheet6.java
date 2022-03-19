@@ -21,8 +21,8 @@ public class sheet6 {
 
         //Question 3
 
-        System.out.println("Enter the String");
-        String str = scan.nextLine();
+        // System.out.println("Enter the String");
+        // String str = scan.nextLine();
         // findTheSubString(str);
 
         //Question 5
@@ -31,7 +31,26 @@ public class sheet6 {
         // convertZeroToFive(n);
 
         //Question 6
-        checkIsogram(str);
+        // System.out.println(checkIsogram(str));
+
+        // Question 7
+        // arrangeZerosToTheArray(arr);
+
+        //Question 8
+        // toggleTheString(str);
+
+        //Question 9
+        // returnMaximumProduct(arr);
+
+        //Question 10
+        // System.out.println("Enter the value of a, b and c");
+        // int a = scan.nextInt();
+        // int b = scan.nextInt();
+        // int c = scan.nextInt();
+        // whetherPythagorianTriplet(a, b,c);
+
+
+
     
     }
 
@@ -103,16 +122,20 @@ public class sheet6 {
 
     }
 
-    public static void checkIsogram(String str){
+    public static int checkIsogram(String str){
         for(int i=0; i<str.length(); i++){
             char ch = str.charAt(i);
-            isContain(str, ch);
+            if(isContain(str, ch) == false){
+                return 0;
+            }
         }
+
+        return 1;
 
        
     }
 
-    public static void isContain(String str, char ch){
+    public static boolean isContain(String str, char ch){
         int count = 0;
         for(int i=0; i<str.length(); i++){
             char ch1 = str.charAt(i);
@@ -121,10 +144,85 @@ public class sheet6 {
             }
             if(count>1){
                 return false;
+                
             }
-            count = 0;
         }
 
         return true;
+    }
+
+    public static void arrangeZerosToTheArray(int[] arr){
+        int[] arr1 = new int[arr.length];
+        int i=0, j = arr.length-1;
+        for(int k=0; k<arr.length; k++){
+            if(arr[k] != 0){
+                arr1[i] = arr[k];
+                i++;
+            }else{
+                arr1[j] = arr[k];
+                j--;
+            }
+        }
+
+        display(arr1);
+    }
+
+    public static void display(int[] arr1){
+        for(int i=0; i<arr1.length; i++){
+            System.out.print(arr1[i] + " ");
+        }
+    }
+
+    public static void toggleTheString(String str){
+        String rstr = " ";
+        for(int i=0; i<str.length(); i++){
+            char ch = str.charAt(i);
+            if(ch >= 'a' && ch <= 'z'){
+                rstr += (char)(ch-32);//uppercase;
+            }else{
+                rstr += (char)(ch+32); // lowercase;
+            }
+        }
+
+        System.out.println(rstr);
+    }
+
+    public static void returnMaximumProduct(int[] arr){
+        int max = Integer.MIN_VALUE;
+        for(int i=1; i<arr.length; i++){
+            int max1 = arr[i] * arr[i-1]; 
+            if(max1 > max){
+                max = max1;
+            }
+        }
+
+        System.out.println(max);
+    }
+
+    public static void whetherPythagorianTriplet(int a, int b, int c){
+        if(a<b){
+            if(b>c){
+                int temp = a;
+                a = b;
+                b = temp;
+            }else if(c>b){
+                int temp = a;
+                a = c;
+                c = temp;
+            }
+        }else if(a>b){
+            if(a<c){
+                int temp = a;
+                a = c;
+                c = temp;
+            }
+        }
+
+        if(a*a == (b*b + c*c)){
+            System.out.println(true);
+        }else{
+            System.out.println(false);
+        }
+        
     }
 }

@@ -24,6 +24,13 @@ public class sheet6 {
         // System.out.println("Enter the String");
         // String str = scan.nextLine();
         // findTheSubString(str);
+        
+        // Question 4
+        // System.out.println("Enter a String");
+        // String str = scan.next();
+        // System.out.println("Enter a subString");
+        // String sbs = scan.next();
+        // checkWhetherSubString(str, sbs);
 
         //Question 5
         // System.out.println("enter the number");
@@ -48,6 +55,16 @@ public class sheet6 {
         // int b = scan.nextInt();
         // int c = scan.nextInt();
         // whetherPythagorianTriplet(a, b,c);
+        
+
+        // Wraper Class: these class is generally use to include the premitive values to the object family in order to behave truely object oriented programming.
+
+        // .parseXxx(): static method and use to convert from one data type to Xxx data type
+        int j = Integer.parseInt("123"); //
+        Integer jk = Integer.valueOf("123");
+        // System.out.println(jk);
+        int c = jk.intValue();// here .xxxValue() return primitive data types;
+        // System.out.println(c);
 
 
 
@@ -95,6 +112,21 @@ public class sheet6 {
         return false;
     }
 
+    public static void checkWhetherSubString(String str, String sbs){
+        StringBuilder sb = new StringBuilder();
+        for(int i=0; i<str.length(); i++){
+            for(int j = i+1; j<str.length(); j++){
+                if(str.substring(i,j) == sbs){
+                    System.out.println(true);
+                }
+            }
+         
+        }
+        System.out.println(false);
+
+        
+
+    }
 
     public static void findTheSubString(String str){
         for(int i=0; i<str.length(); i++){

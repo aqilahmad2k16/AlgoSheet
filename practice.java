@@ -1,7 +1,13 @@
 class practice{
     public static void main(String[] args){
-        long a = 2538564;
-        int b = (int)a;
-        System.out.println(b);
+        // String str = "Aqil";
+        // for(int i=0; i<str.length(); i++){
+        //     char ch = str.charAt(i);
+        //     if(ch == 'A'){
+        //         ch = 'V';
+        //     }
+        // }
+
+        // System.out.println(str);
     }
 }

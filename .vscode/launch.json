@@ -1,0 +1,70 @@
+{
+    // Use IntelliSense to learn about possible attributes.
+    // Hover to view descriptions of existing attributes.
+    // For more information, visit: https://go.microsoft.com/fwlink/?linkid=830387
+    "version": "0.2.0",
+    "configurations": [
+        {
+            "type": "java",
+            "name": "Launch Current File",
+            "request": "launch",
+            "mainClass": "${file}"
+        },
+        {
+            "type": "java",
+            "name": "Launch TextEditor1",
+            "request": "launch",
+            "mainClass": "TextEditor1",
+            "projectName": "algo_72e4dc4c"
+        },
+        {
+            "type": "java",
+            "name": "Launch practice",
+            "request": "launch",
+            "mainClass": "practice",
+            "projectName": "algo_72e4dc4c"
+        },
+        {
+            "type": "java",
+            "name": "Launch sheet1",
+            "request": "launch",
+            "mainClass": "sheet1",
+            "projectName": "algo_72e4dc4c"
+        },
+        {
+            "type": "java",
+            "name": "Launch sheet2",
+            "request": "launch",
+            "mainClass": "sheet2",
+            "projectName": "algo_72e4dc4c"
+        },
+        {
+            "type": "java",
+            "name": "Launch sheet3",
+            "request": "launch",
+            "mainClass": "sheet3",
+            "projectName": "algo_72e4dc4c"
+        },
+        {
+            "type": "java",
+            "name": "Launch sheet4",
+            "request": "launch",
+            "mainClass": "sheet4",
+            "projectName": "algo_72e4dc4c"
+        },
+        {
+            "type": "java",
+            "name": "Launch sheet5",
+            "request": "launch",
+            "mainClass": "sheet5",
+            "projectName": "algo_72e4dc4c"
+        },
+        {
+            "type": "java",
+            "name": "Launch sheet6",
+            "request": "launch",
+            "mainClass": "sheet6",
+            "projectName": "algo_72e4dc4c"
+        }
+    ]
+}

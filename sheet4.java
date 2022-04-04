@@ -24,16 +24,16 @@ public class sheet4 {
 
         // Question 3
 
-        // System.out.println("Enter the String");
-        // String str = scan.nextLine();
+        System.out.println("Enter the String");
+        String str = scan.nextLine();
         // printPalindromic(str);
 
         // Question 4
         // printAllPanlindromicSubString(str);
 
         // Question 5
-        // firstCompression(str);
-        // secondCompression(str);
+        firstCompression(str);
+        secondCompression(str);
 
         // Question 6
         // findAllPermutation(str);

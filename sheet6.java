@@ -60,11 +60,15 @@ public class sheet6 {
         // Wraper Class: these class is generally use to include the premitive values to the object family in order to behave truely object oriented programming.
 
         // .parseXxx(): static method and use to convert from one data type to Xxx data type
-        int j = Integer.parseInt("123"); //
-        Integer jk = Integer.valueOf("123");
-        // System.out.println(jk);
-        int c = jk.intValue();// here .xxxValue() return primitive data types;
-        // System.out.println(c);
+        // int j = Integer.parseInt("123"); //
+        // Integer jk = Integer.valueOf("123");
+        // // System.out.println(jk);
+        // int c = jk.intValue();// here .xxxValue() return primitive data types;
+        // // System.out.println(c);
+
+        // System.out.println("Enter the string");
+        // String str = scan.nextLine();
+        
 
 
 
